@@ -13,6 +13,7 @@ using Contacte.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Contacte.Models.Entities;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace Contacte
 {
@@ -41,6 +42,9 @@ namespace Contacte
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
+            services.ConfigureApplicationCookie(options => options.LoginPath = "/identity/account/login");
+
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -61,7 +65,6 @@ namespace Contacte
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
             app.UseAuthentication();
             using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
@@ -74,6 +77,8 @@ namespace Contacte
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+
+                
             });
         }
     }

@@ -68,7 +68,7 @@ using Contacte.Models;
             WriteLiteral("\r\n<div class=\"container-fluid\">\r\n    <br /><br />\r\n    <p>\r\n        ");
             EndContext();
             BeginContext(169, 91, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2f1e5453cfb04b7aa79eeabe1cd9f32a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "20eb660f5bb64724811fd8e0d27d0c89", async() => {
                 BeginContext(242, 14, true);
                 WriteLiteral("Adauga contact");
                 EndContext();
@@ -213,7 +213,7 @@ using Contacte.Models;
             WriteLiteral("\r\n                            </td>\r\n                            <td>\r\n                                ");
             EndContext();
             BeginContext(2048, 87, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "542c62f5248345c3aacd914e8d1fd2f5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "de69fafcba074c4a80cdc9ca2a7d49fa", async() => {
                 BeginContext(2124, 7, true);
                 WriteLiteral("Detalii");
                 EndContext();
@@ -249,7 +249,7 @@ using Contacte.Models;
             WriteLiteral("\r\n                                ");
             EndContext();
             BeginContext(2169, 87, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e6ed82c5aad44338a557593cf622161", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "af2534c61e0a4e0992ba568b3804549f", async() => {
                 BeginContext(2244, 8, true);
                 WriteLiteral("Stergere");
                 EndContext();

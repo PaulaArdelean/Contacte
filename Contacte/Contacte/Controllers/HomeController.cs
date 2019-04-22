@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Contacte.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ApplicationDbContext _context;
