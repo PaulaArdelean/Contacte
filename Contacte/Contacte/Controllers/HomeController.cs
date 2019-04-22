@@ -73,7 +73,7 @@ namespace Contacte.Controllers
             contact.Address = Address;
             _context.Update(contact);
             _context.SaveChanges();
-            return RedirectToAction("Details", new { id = 1 });
+            return RedirectToAction("Details", new { id = contact.Id });
         }
 
         public IActionResult Details(int? id)
