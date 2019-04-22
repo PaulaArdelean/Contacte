@@ -8,6 +8,7 @@ using Contacte.Models;
 using Contacte.Data;
 using Contacte.Models.Entities;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Contacte.Controllers
 {
@@ -22,6 +23,10 @@ namespace Contacte.Controllers
 
         public IActionResult Index()
         {
+            if(User.Claims.Count() == 0)
+            {
+                return View(new List<Contact>());
+            }
             var model = _context.Contacts.Where(d => d.UserId == User.FindFirst(ClaimTypes.NameIdentifier).Value);
             return View(model);
         }
